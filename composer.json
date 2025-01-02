@@ -1,0 +1,31 @@
+{
+    "name": "elan-ev/digicard-wallet-library",
+    "description": "Connector to Google and Apple Wallet for Digital Student ID",
+    "type": "library",
+    "require": {
+        "php": ">=8.1",
+        "google/auth": "^1.45",
+        "google/apiclient": "^2.18",
+        "google/apiclient-services": "^0.388.0",
+        "guzzlehttp/guzzle": "^7.9",
+        "pkpass/pkpass": "^2.4.0"
+    },
+    "license": "AGPL-3.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "DigicardWalletLibrary\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Till Glöggler",
+            "email": "gloeggler@elan-ev.de"
+        },
+        {
+            "name": "Farbod Zamain",
+            "email": "zamani@elan-ev.de"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": false
+}
