@@ -6,7 +6,8 @@
         "google/auth": "^1.45",
         "google/apiclient": "^2.18",
         "google/apiclient-services": "^0.388.0",
-        "guzzlehttp/guzzle": "^7.9"
+        "guzzlehttp/guzzle": "^7.9",
+        "pkpass/pkpass": "^1.2"
     },
     "license": "GPL-2.0-or-later",
     "autoload": {
