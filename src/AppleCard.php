@@ -1,7 +1,7 @@
 <?php
 
 /**
- * AppleCard.php - Apple Wallet integration for Digital Student ID
+ * AppleCard.php - Apple Wallet integration for Digital Campuscard
  *
  * This file is part of the Digicard Wallet Library.
  *

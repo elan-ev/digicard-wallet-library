@@ -1,7 +1,7 @@
 <?php
 
 /**
- * WalletUser.php - User data model for Digital Student ID
+ * WalletUser.php - User data model for Digital Campuscard
  *
  * This file is part of the Digicard Wallet Library.
  *

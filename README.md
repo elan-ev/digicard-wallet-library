@@ -1,16 +1,16 @@
 # Digicard Wallet Library
 
-A PHP library for integrating digital student IDs with Google Wallet and Apple Wallet.
+A PHP library for integrating digital campuscards with Google Wallet and Apple Wallet.
 
 ## Description
 
-The Digicard Wallet Library provides a simple and unified interface for creating and managing digital student ID cards in both Google Wallet and Apple Wallet. This library handles the complexity of working with both wallet platforms, allowing educational institutions to easily provide their students with digital ID cards.
+The Digicard Wallet Library provides a simple and unified interface for creating and managing digital campuscards in both Google Wallet and Apple Wallet. This library handles the complexity of working with both wallet platforms, allowing educational institutions to easily provide their students and employees with digital campuscards.
 
 ## Features
 
-- **Google Wallet Integration**: Create, update, and expire digital student IDs in Google Wallet
+- **Google Wallet Integration**: Create, update, and expire digital campuscards in Google Wallet
 - **Apple Wallet Integration**: Generate PKPass files for Apple Wallet
-- **Unified User Model**: Simple `WalletUser` class to represent student information
+- **Unified User Model**: Simple `WalletUser` class to represent user information
 - **Customizable**: Support for multiple study courses, semester information, and institution branding
 
 ## Installation

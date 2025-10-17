@@ -1,7 +1,7 @@
 <?php
 
 /**
- * GoogleCard.php - Google Wallet integration for Digital Student ID
+ * GoogleCard.php - Google Wallet integration for Digital Campuscard
  *
  * This file is part of the Digicard Wallet Library.
  *
@@ -209,7 +209,7 @@ class GoogleCard
      * Creates a GenericObject for Google Wallet based on user data.
      *
      * This method constructs a GenericObject with various properties required for
-     * a digital student ID card in Google Wallet. It includes information such as
+     * a Digital Campuscard card in Google Wallet. It includes information such as
      * the student's name, image, matriculation number, study course, semester details,
      * and a QR code for validation.
      *

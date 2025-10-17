@@ -1,6 +1,6 @@
 {
     "name": "elan-ev/digicard-wallet-library",
-    "description": "Connector to Google and Apple Wallet for Digital Student ID",
+    "description": "Connector to Google and Apple Wallet for Digital Campuscard",
     "type": "library",
     "require": {
         "php": ">=8.1",
