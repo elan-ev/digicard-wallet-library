@@ -223,12 +223,40 @@ class AppleCard
             'logoText' => $user->getInstitution(),
             'foregroundColor' => 'rgb(255, 255, 255)',
             'backgroundColor' => 'rgb(66, 133, 244)',
-            'barcodes' => [
-                [
-                    'message' => $this->getValidationUrl($user),
-                    'format' => 'PKBarcodeFormatQR',
-                    'messageEncoding' => 'iso-8859-1'
+            'generic' => [
+                'primaryFields' => [
+                    [
+                        'key' => 'name',
+                        'label' => 'Name',
+                        'value' => $user->getName()
+                    ]
+                ],
+                'secondaryFields' => [
+                    [
+                        'key' => 'matriculation',
+                        'label' => 'Matriculation Number',
+                        'value' => $user->getMatrikel()
+                    ]
+                ],
+                'auxiliaryFields' => [
+                    [
+                        'key' => 'validity',
+                        'label' => 'Valid',
+                        'value' => $user->getSemesterStart() . ' - ' . $user->getSemesterEnd()
+                    ]
+                ],
+                'backFields' => [
+                    [
+                        'key' => 'courses',
+                        'label' => 'Study Courses',
+                        'value' => $this->formatStudyCourses($user->getStudycourses())
+                    ]
                 ]
+            ],
+            'barcode' => [
+                'message' => $this->getValidationUrl($user),
+                'format' => 'PKBarcodeFormatQR',
+                'messageEncoding' => 'iso-8859-1'
             ]
         ];
 

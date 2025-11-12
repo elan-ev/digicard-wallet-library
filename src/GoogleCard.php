@@ -245,6 +245,12 @@ class GoogleCard
             ]),
             'textModulesData' => [
                 new TextModuleData([
+                    'header' => $user->getType(),
+                    'body' => $user->getStatus(),
+                    'id' => 'TEXT_MODULE_ID'
+                ]),
+
+                new TextModuleData([
                     'header' => 'Matrikelnummer',
                     'body' => $user->getMatrikel(),
                     'id' => 'TEXT_MODULE_ID'
@@ -281,7 +287,7 @@ class GoogleCard
             'cardTitle' => new LocalizedString([
                 'defaultValue' => new TranslatedString([
                     'language' => 'en-US',
-                    'value' => 'Studierendenausweis '. $user->getInstitution()
+                    'value' => $user->getInstitution()
                 ])
             ]),
             'header' => new LocalizedString([

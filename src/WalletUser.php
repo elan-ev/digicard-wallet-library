@@ -58,6 +58,12 @@ class WalletUser
     /** @var string */
     private $semesterEnd;
 
+    /** @var string */
+    private $status;
+
+    /** @var string */
+    private $type;
+
     /**
      * User constructor.
      *
@@ -73,6 +79,8 @@ class WalletUser
         $this->studycourses = $userData['studycourses'] ?? [];
         $this->semesterStart = $userData['semesterStart'] ?? '';
         $this->semesterEnd = $userData['semesterEnd'] ?? '';
+        $this->status = $userData['status'] ?? '';
+        $this->type = $userData['type'] ?? '';
     }
 
     /**
@@ -203,5 +211,37 @@ class WalletUser
     public function setSemesterEnd(string $semesterEnd): void
     {
         $this->semesterEnd = $semesterEnd;
+    }
+
+    /**
+     * @return string
+     */
+    public function getStatus(): string
+    {
+        return $this->status;
+    }
+
+    /**
+     * @param string $status
+     */
+    public function setStatus(string $status): void
+    {
+        $this->status = $status;
+    }
+
+    /**
+     * @return string
+     */
+    public function getType(): string
+    {
+        return $this->type;
+    }
+
+    /**
+     * @param string $type
+     */
+    public function setType(string $type): void
+    {
+        $this->type = $type;
     }
 }
