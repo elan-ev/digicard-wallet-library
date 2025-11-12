@@ -177,6 +177,11 @@ class AppleCard
         // Secondary Fields
         $secondary_fields = [
             [
+                'key' => 'status',
+                'label' => $user->getType(),
+                'value' => $user->getStatus()
+            ],
+            [
                 'key' => 'matriculation',
                 'label' => 'Matriculation Number',
                 'value' => $user->getMatrikel()
@@ -223,40 +228,12 @@ class AppleCard
             'logoText' => $user->getInstitution(),
             'foregroundColor' => 'rgb(255, 255, 255)',
             'backgroundColor' => 'rgb(66, 133, 244)',
-            'generic' => [
-                'primaryFields' => [
-                    [
-                        'key' => 'name',
-                        'label' => 'Name',
-                        'value' => $user->getName()
-                    ]
-                ],
-                'secondaryFields' => [
-                    [
-                        'key' => 'matriculation',
-                        'label' => 'Matriculation Number',
-                        'value' => $user->getMatrikel()
-                    ]
-                ],
-                'auxiliaryFields' => [
-                    [
-                        'key' => 'validity',
-                        'label' => 'Valid',
-                        'value' => $user->getSemesterStart() . ' - ' . $user->getSemesterEnd()
-                    ]
-                ],
-                'backFields' => [
-                    [
-                        'key' => 'courses',
-                        'label' => 'Study Courses',
-                        'value' => $this->formatStudyCourses($user->getStudycourses())
-                    ]
+            'barcodes' => [
+                [
+                    'message' => $this->getValidationUrl($user),
+                    'format' => 'PKBarcodeFormatQR',
+                    'messageEncoding' => 'iso-8859-1'
                 ]
-            ],
-            'barcode' => [
-                'message' => $this->getValidationUrl($user),
-                'format' => 'PKBarcodeFormatQR',
-                'messageEncoding' => 'iso-8859-1'
             ]
         ];
 
