@@ -106,7 +106,7 @@ This library is developed and maintained by [elan e.V.](https://elan-ev.de) - a 
 
 ## Copyright
 
-Copyright © 2025 ELAN e.V.
+Copyright © 2025 - 2026 ELAN e.V.
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
